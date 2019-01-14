@@ -12,7 +12,7 @@
     <title>VENDA WEB</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min1.css" rel="stylesheet">
+    <link href="../css/bootstrap.min1.css" rel="stylesheet">
 
     <!-- calendário -->
     <script src="../js/calendarJS/jquery-3.3.1.min.js"></script>
@@ -22,7 +22,7 @@
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
 
 <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
@@ -41,7 +41,7 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html">
+                            <a class="nav-link" href="../home.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-home">
@@ -52,7 +52,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cadastro/c_cliente.html">
+                            <a class="nav-link" href="c_cliente.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-file">
@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="cadastro/c_produto.html">
+                            <a class="nav-link active" href="c_produto.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-file">
@@ -74,7 +74,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cadastro/c_fornecedor.html">
+                            <a class="nav-link" href="c_fornecedor.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-file">
@@ -85,7 +85,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cadastro/c_tpagamento.html">
+                            <a class="nav-link" href="c_tpagamento.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-file">
@@ -151,7 +151,7 @@
                             </a>
                         </li>-->
                         <li class="nav-item">
-                            <p style="width: 100%; bottom: 0; position: absolute;" align="center"></p>
+                            <p style="width: 100%; bottom: 0; position: absolute;" align="center">c_produto</p>
                         </li>
                     </ul>
                     </ul>
@@ -167,11 +167,11 @@
                         <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
                     </div>
                 </div>
-                <!--<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">CADASTRO DE PRODUTO</h1>
                 </div>
 
-                - código #
+                <!-- - código #
                 - Nome produto #
                 - Unidade de medida #
                 - Categoria #
@@ -188,31 +188,31 @@
                 - Data cadastro
                 - Ativo ou inativo ** -->
 
-                <!-- formulario de CADASTRO
+                <!-- formulario de CADASTRO -->
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-1">
-                            <label for="codProduto">Código</label>
-                            <input type="text" class="form-control" id="codProduto" disabled >
+                            <label for="codPagamento">Código</label>
+                            <input type="text" class="form-control" id="codPagamento" disabled >
                         </div>
                         <div class="form-group col-md-8">
-                            <label for="nomeProduto">Nome Produto</label>
-                            <input type="text" class="form-control" id="nomeProduto">
+                            <label for="nomePagamento">Descrição</label>
+                            <input type="text" class="form-control" id="nomePagamento">
                         </div>
-                        <div class="form-group col-md-1">
-                            <label for="qtdMin">Qtd. Min</label>
-                            <input type="number" class="form-control" id="qtdMin">
+                        <div class="form-group col-md-3">
+                            <label for="tipoPag">Tipo Pagamento</label>
+                            <input type="number" class="form-control" id="tipoPag">
                         </div>
-                        <div class="form-group col-md-1">
-                            <label for="qtdMax">Qtd. Max</label>
-                            <input type="number" class="form-control" id="qtdMax">
+                        <div class="form-group col-md-3">
+                            <label for="tipoRec">Tipo Recebimento</label>
+                            <input type="number" class="form-control" id="tipoRec">
                         </div>
-                        <div class="form-group col-md-1">
-                            <label for="qtdAtual">Qtd. Atual</label>
-                            <input type="number" class="form-control" id="qtdAtual">
+                        <div class="form-group col-md-3">
+                            <label for="tipoVenda">Tipo de Venda</label>
+                            <input type="number" class="form-control" id="tipoVenda">
                         </div>
                     </div>
-                    <div class="form-row">
+                    <!--<div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="codBarras">Código De Barras</label>
                             <input type="number" class="form-control" id="codBarras">
@@ -260,13 +260,10 @@
                                 Consumível?
                             </label>
                         </div>
-                    </div>
+                    </div>-->
                     <button type="submit" class="btn btn-primary">SALVAR</button>
                     <button type="submit" class="btn btn-secondary">LIMPAR</button>
-                </form>-->
-                <center>
-                    <img src="img/logo1.png" class="img-responsive" alt=”some text” width=800 height=500>
-                </center>
+                </form>
             </main>
         </div>
     </div>
