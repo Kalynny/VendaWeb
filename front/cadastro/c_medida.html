@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="">
 
-    <title>VENDAS WEB</title>
+    <title>VENDA WEB</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min1.css" rel="stylesheet">
@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="c_produto.html">
+                            <a class="nav-link active" href="c_produto.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-file">
@@ -74,7 +74,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="c_fornecedor.html">
+                            <a class="nav-link" href="c_fornecedor.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-file">
@@ -117,18 +117,17 @@
                                 UNIDADE DE MEDIDA
                             </a>
                         </li>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="../vendas.html">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                  class="feather feather-file">
-                                  <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                                  <polyline points="13 2 13 9 20 9"></polyline>
-                              </svg>
-                               VENDAS
-                          </a>
-                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vendas.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-file">
+                                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                    <polyline points="13 2 13 9 20 9"></polyline>
+                                </svg>
+                                VENDAS
+                            </a>
+                        </li>
                         <!--<li class="nav-item">
                             <a class="nav-link" href="c_departamento.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -152,7 +151,7 @@
                             </a>
                         </li>-->
                         <li class="nav-item">
-                            <p style="width: 100%; bottom: 0; position: absolute;" align="center">c_cliente</p>
+                            <p style="width: 100%; bottom: 0; position: absolute;" align="center">c_medida</p>
                         </li>
                     </ul>
                     </ul>
@@ -169,109 +168,128 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">CADASTRO DE CLIENTE</h1>
+                    <h1 class="h2">CADASTRO UNIDADE DE MEDIDA</h1>
                 </div>
-                <!-- formulario cadastro -->
+
+                <!-- - código #
+                - Nome produto #
+                - Unidade de medida #
+                - Categoria #
+                - SubCategoria #
+                - Custo medio #
+                - Referencia *
+                - Código de barras #
+                - Consumível? #
+                - Lote / Validade #
+                - Observações
+                - Estoque
+                - Quantidade max / min #
+                - Quantidade atual #
+                - Data cadastro
+                - Ativo ou inativo ** -->
+
+                <!-- formulario de CADASTRO -->
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-1">
-                            <label for="codcliente">Código</label>
-                            <input type="text" class="form-control" id="codcliente" disabled >
+                            <label for="codumedida">Código</label>
+                            <input type="text" class="form-control" id="codumedida" disabled >
                         </div>
-
-                        <div class="form-group col-md-5">
-                            <label for="nome">Nome</label>
-                            <input type="text" class="form-control" id="nomeFantasia">
+                        <div class="form-group col-md-8">
+                            <label for="nomeumedida">Descrição</label>
+                            <input type="text" class="form-control" id="nomeumedida">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="simboloumedida">Simbolo</label>
+                            <input type="number" class="form-control" id="simboloumedida">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="grupoumedida">Grupo da Unidade</label>
+                            <input type="number" class="form-control" id="grupoumedida">
                         </div>
                     </div>
-
+                    <!--<div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="codBarras">Código De Barras</label>
+                            <input type="number" class="form-control" id="codBarras">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="custoMedio">Custo Médio</label>
+                            <input type="number" class="form-control" id="custoMedio">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="uniMedida">Unidade de Medida</label>
+                            <select class="form-control" id="uniMedida">
+                                <option selected>Escolha uma opcão</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="categoria">Categoria</label>
+                            <select class="form-control" id="categoria">
+                                <option selected>Escolha uma opcão</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="subCategoria">Subcategoria</label>
+                            <select class="form-control" id="subCategoria">
+                                <option selected>Escolha uma opcão</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="lote">Lote</label>
+                            <input type="text" class="form-control" id="lote">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="validade">Validade</label>
+                            <input type="date" class="form-control" id="validade">
+                        </div>
+                    </div>
                     <div class="form-group">
-                        <label for="endereco">Endereco</label>
-                        <input type="text" class="form-control" id="endereco">
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group col-md-1">
-                            <label for="numEndereco">Numero</label>
-                            <input type="text" class="form-control" id="numEndereco">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Consumível?
+                            </label>
                         </div>
-                        <div class="form-group col-md-2">
-                            <label for="complemento">Complemento</label>
-                            <input type="text" class="form-control" id="complemento">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="bairro">Bairro</label>
-                            <input type="text" class="form-control" id="bairro">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" class="form-control" id="cidade">
-                        </div>
-                        <div class="form-group col-md-1">
-                            <label for="uf">UF</label>
-                            <input type="text" class="form-control" id="uf">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="cep">Cep</label>
-                            <input type="text" class="form-control" id="cep">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-2">
-                            <label for="cnpj/cpf">CNPJ/CPF</label>
-                            <input type="text" class="form-control" id="cnpj/cpf">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="insEstadualRg">Inscrição Estadual/RG</label>
-                            <input type="text" class="form-control" id="insEstadualRg">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="nomeContato">Contato</label>
-                            <input type="text" class="form-control" id="nomeContato">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="tel1">Telefone</label>
-                            <input type="text" class="form-control" id="tel1">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="tel2">Celular</label>
-                            <input type="text" class="form-control" id="tel2">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="site">Site</label>
-                            <input type="text" class="form-control" id="site">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="banco">Banco</label>
-                            <input type="text" class="form-control" id="banco">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="agencia">Agencia</label>
-                            <input type="text" class="form-control" id="agencia">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="conta">Conta</label>
-                            <input type="text" class="form-control" id="conta">
-                        </div>
-                    </div>
+                    </div>-->
                     <button type="submit" class="btn btn-primary">SALVAR</button>
                     <button type="submit" class="btn btn-secondary">LIMPAR</button>
-              </form>
+                </form>
             </main>
         </div>
     </div>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    dados
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <!-- calendar -->
+    <script src="js/calendarJS/link.js"></script>
+    <script src="js/calendarJS/gijgo.min.js"></script>
     <!-- jQuery -->
     <script src="../js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
