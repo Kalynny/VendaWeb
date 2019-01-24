@@ -20,6 +20,7 @@ body {
   z-index: 100; /* Behind the navbar */
   padding: 48px 0 0; /* Height of navbar */
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  display: none;
 }
 
 .sidebar-sticky {
@@ -35,6 +36,7 @@ body {
   .sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;
+
   }
 }
 
@@ -50,11 +52,15 @@ body {
 
 .sidebar .nav-link.active {
   color: #007bff;
+
 }
 
 .sidebar .nav-link:hover .feather,
 .sidebar .nav-link.active .feather {
   color: inherit;
+
+
+
 }
 
 .sidebar-heading {
@@ -86,6 +92,10 @@ body {
   padding: .75rem 1rem;
   border-width: 0;
   border-radius: 0;
+}
+nav-link active li ul{
+  display: none;
+
 }
 
 .form-control-dark {
