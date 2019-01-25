@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="">
 
-    <title>VENDA WEB</title>
+    <title>VENDAS WEB</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min1.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="../home.html">
+                            <!--<a class="nav-link" href="../home.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-home">
@@ -49,9 +49,9 @@
                                     <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                 </svg>
                                 INÍCIO <span class="sr-only">(current)</span>
-                            </a>
+                            </a>-->
                         </li>
-                        <a class="nav-link" href="">
+                        <!--<a class="nav-link" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="feather feather-file">
@@ -106,7 +106,7 @@
                                           </a>
                                       </li>
                                     <li class="nav-item">
-                                          <a class="nav-link" href="c_categoria.html">
+                                          <a class="nav-link" href="c_Categoria.html">
                                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                                   class="feather feather-file">
@@ -161,7 +161,7 @@
                                   <polyline points="13 2 13 9 20 9"></polyline>
                               </svg>
                               NOTA FISCAL
-                          </a>
+                          </a>-->
                       </li>
                         <!--<li class="nav-item">
                             <a class="nav-link" href="c_departamento.html">
@@ -186,7 +186,7 @@
                             </a>
                         </li>-->
                         <li class="nav-item">
-                            <p style="width: 100%; bottom: 0; position: absolute;" align="center">c_medida</p>
+                            <p style="width: 100%; bottom: 0; position: absolute;" align="center">c_login</p>
                         </li>
                     </ul>
                     </ul>
@@ -203,128 +203,44 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">CADASTRO UNIDADE DE MEDIDA</h1>
+                    <h1 class="h2">LOGIN DE USUÁRIO</h1>
                 </div>
-
-                <!-- - código #
-                - Nome produto #
-                - Unidade de medida #
-                - Categoria #
-                - SubCategoria #
-                - Custo medio #
-                - Referencia *
-                - Código de barras #
-                - Consumível? #
-                - Lote / Validade #
-                - Observações
-                - Estoque
-                - Quantidade max / min #
-                - Quantidade atual #
-                - Data cadastro
-                - Ativo ou inativo ** -->
-
-                <!-- formulario de CADASTRO -->
+                <!-- formulario cadastro -->
                 <form>
                     <div class="form-row">
-                        <div class="form-group col-md-1">
-                            <label for="codumedida">Código</label>
-                            <input type="number" class="form-control" id="codumedida" disabled >
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label for="nomeumedida">Descrição</label>
-                            <input type="text" class="form-control" id="nomeumedida">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="simboloumedida">Simbolo</label>
-                            <input type="number" class="form-control" id="simboloumedida">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="grupoumedida">Grupo da Unidade</label>
-                            <input type="number" class="form-control" id="grupoumedida">
-                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="usuario">Usuário</label>
+                            <input type="text" class="form-control" id="usuario" >
                     </div>
-                    <!--<div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="codBarras">Código De Barras</label>
-                            <input type="number" class="form-control" id="codBarras">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="custoMedio">Custo Médio</label>
-                            <input type="number" class="form-control" id="custoMedio">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="uniMedida">Unidade de Medida</label>
-                            <select class="form-control" id="uniMedida">
-                                <option selected>Escolha uma opcão</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="categoria">Categoria</label>
-                            <select class="form-control" id="categoria">
-                                <option selected>Escolha uma opcão</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="subCategoria">Subcategoria</label>
-                            <select class="form-control" id="subCategoria">
-                                <option selected>Escolha uma opcão</option>
-                                <option>...</option>
-                            </select>
+                    <div class="form-group col-md-6">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
-                            <label for="lote">Lote</label>
-                            <input type="text" class="form-control" id="lote">
+                            <label for="senha">Senha</label>
+                            <input type="text" class="form-control" id="senha">
                         </div>
                         <div class="form-group col-md-3">
-                            <label for="validade">Validade</label>
-                            <input type="date" class="form-control" id="validade">
+                            <label for="senha1">Redegite a Senha</label>
+                            <input type="text" class="form-control" id="senha1">
                         </div>
+                        <!--<div class="form-group col-md-4">
+                            <label for="conta">Conta</label>
+                            <input type="text" class="form-control" id="conta">
+                        </div>-->
                     </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Consumível?
-                            </label>
-                        </div>
-                    </div>-->
                     <button type="submit" class="btn btn-primary">SALVAR</button>
                     <button type="submit" class="btn btn-secondary">LIMPAR</button>
-                </form>
+              </form>
             </main>
         </div>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    dados
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <!-- calendar -->
-    <script src="js/calendarJS/link.js"></script>
-    <script src="js/calendarJS/gijgo.min.js"></script>
     <!-- jQuery -->
     <script src="../js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

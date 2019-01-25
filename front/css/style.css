@@ -3,7 +3,7 @@
 over-ride "Weak" message, show font in dark grey
 */
 body {
-  altura: 100%;
+  altura: 80%;
 
 }
 
@@ -14,6 +14,7 @@ body {
 /*
 Reference:
 http://www.bootstrapzen.com/item/135/simple-login-form-logo/
+url(http://i.imgur.com/GHr12sH.jpg) no-repeat center center fixed;
 */
 
 * {
@@ -36,7 +37,7 @@ http://www.bootstrapzen.com/item/135/simple-login-form-logo/
 	}
 
 body {
-	background: url(http://i.imgur.com/GHr12sH.jpg) no-repeat center center fixed;
+	background: #ffffff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,13 +45,13 @@ body {
 }
 
 .login-form {
-	margin-top: 65px;
+	margin-top: 40px;
 }
 
 form[role=login] {
 	color: #5d5d5d;
-	background: #f2f2f2;
-	padding: 26px;
+	background: #d8d8d8;
+	padding: 10px;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -58,7 +59,7 @@ form[role=login] {
 	form[role=login] img {
 		display: block;
 		margin: 0 auto;
-		margin-bottom: 45px;
+		margin-bottom: 25px;
 	}
 	form[role=login] input,
 	form[role=login] button {
@@ -72,8 +73,8 @@ form[role=login] {
 .form-links {
 	text-align: center;
 	margin-top: 1em;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 	.form-links a {
-		color: #fff;
+		color: #000000;
 	}
